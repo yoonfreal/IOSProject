@@ -106,7 +106,7 @@ struct ChoiceView: View {
                 showConsequence = true
             }
             Task {
-                try? await Task.sleep(for: .seconds(3.2))
+                try? await Task.sleep(for: .seconds(5))
                 withAnimation(DesignTokens.Motion.easeGentle) {
                     showConsequence = false
                     selectedChoice = .none
